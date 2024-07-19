@@ -1,0 +1,69 @@
+<!doctype.html>
+<html>
+<head>
+<title>MARVEL</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body vlink="white" link="white" alink="white">
+<div class="main">
+<nav>
+<div class="logo">
+<img src="https://www.cgmagonline.com/wp-content/uploads/2020/12/marvel-studios-next-wave-approaches-on-disney.jpg">
+</div>
+<div class="nav-links">
+<ul>
+<li><a href="file1.html">HOME</li>
+<li><a href="file6.html">MOVIES</li>
+<li><a href="file7.html">ROLES</li>
+<li><a href="file8.html">NEON</li>
+</ul>
+</nav>
+<div class="information">
+<div class="overlay"></div>
+<img src="https://img.cinemablend.com/filter:scale/quill/a/a/3/4/8/1/aa3481a1a3ace387a891576da742c5524f70873e.jpg?mw=600" class="mobile">
+<div id="circle">
+<div class="feature one">
+<img src="s.jpg">
+<div><a href="file2.html"><h1>strength</h1></a></div>
+</div>
+<div class="feature two">
+<img src="w.png">
+<div><a href="file4 .html"><h1>weapon</h1></a></div>
+</div>
+<div class="feature three">
+<img src="t.jpg">
+<div><a href="file5.html"><h1>durability and speed</h1></a></div>
+</div>
+<div class="feature four">
+<img src="d.png">
+<div><a href="file3.html"><h1>weight</h1></a></div>
+</div>
+</div>
+</div>
+<div class="controls">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkQtvyXMCIzkk1Ti6Ad50rwAnqkvKqg1_XLA&usqp=CAU" id="upBtn">
+<h3>Features</h3>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkQtvyXMCIzkk1Ti6Ad50rwAnqkvKqg1_XLA&usqp=CAU" id="downBtn">
+</div>
+</div>
+<script>
+var circle= document.getElementById("circle");
+var upBtn= document.getElementById("upBtn");
+var downBtn= document.getElementById("downBtn");
+var rotateValue = circle.style.transform;
+var rotateSum;
+upBtn.onclick= function()
+{
+rotateSum = rotateValue + "rotate(-90deg)";
+circle.style.transform = rotateSum;
+rotateValue = rotateSum;
+}
+downBtn.onclick= function()
+{
+rotateSum = rotateValue + "rotate(+90deg)";
+circle.style.transform = rotateSum;
+rotateValue = rotateSum;
+}
+</script>
+</body>
+</html>

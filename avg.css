@@ -1,0 +1,43 @@
+body{
+margin: 0%;
+padding: 0%;
+font-family: sans-serif;
+}
+.split{
+position: relative;
+height: 100vh;
+display: flex;
+background: black;
+}
+.split .screen{
+position: relative;
+flex-grow: 2;
+display: flex;
+overflow:hidden;
+transition: 1s;
+}
+.split:hover .screen{
+opacity:0.1;
+}
+.split .screen:hover{
+flex-grow:5;
+opacity: 1;
+}
+.split .screen:nth-child(1){
+background:url(https://wallpapercave.com/wp/wp3431656.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size: 100% 100%;
+}
+.split .screen:nth-child(2){
+background:url(https://www.wallpapertip.com/wmimgs/36-360197_neon-avengers-wallpaper-hd.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size: 100% 100%;
+}
+.split .screen:nth-child(3){
+background:url(https://images-cdn.9gag.com/photo/a2Z8qAp_460s.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size: 100% 100%;
+}
